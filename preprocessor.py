@@ -1,7 +1,7 @@
 import pandas as pd
 
 def preprocess(df,region_df):
-    # Filtering for summer 
+    # Filtering for summer olympics
     df = df[df['Season'] == 'Summer']
     # Merge with region_df
     df = df.merge(region_df, on='NOC', how='left')
