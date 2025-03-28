@@ -23,7 +23,6 @@ def fetch_medal_tally(df, year, country) :
     x['Silver'] = x['Silver'].astype('int')
     x['Bronze'] = x['Bronze'].astype('int')
     x['total'] = x['total'].astype('int')
-
     return x
 
 
